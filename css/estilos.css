@@ -1,0 +1,100 @@
+/*esto es un comentario en css*/
+/*
+    este es un comentario multilinea
+    y puedo seguir aca
+*/
+/*
+ reglas en css
+ la manera de aplicar estilos a una etiqueta, a todas las etiquetas o un grupo de etiquetas de html, es por selectores
+
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor
+}
+que tipo de selectores hay : 
+universal: *{ 
+            propiedad:valor;}
+            el selector universal modifica todas las etiquetas que esten dentro html que tienen linkeado ese css
+            En el selector universal se suelen resetear valores, el tipo de fuente de la mayoria de las etiquetas
+            los espaciados de todas las etiquetas.
+
+etiqueta: etiqueta{propiedad:valor;}
+            el selector de etiqueta modifica todas las etiquetas que tengan el nombre de la etiqueta que se puso en el selector
+clase : .nombreDeLaClase{propiedad:valor}
+         el selector de clase me permite darle estilos a un grupo de etiquetas y no necesariamente ese grupo de etiquetas son del mismo tipo de etiquetas
+id : #nombreId{propiedad:valor}
+     el selector de id me permite darle estilos a una sola etiqueta y esa etiqueta tiene que tener el id que se puso en el selector
+
+que es la cascada:
+    como se aplican las propiedades de css siempre y cuando tengamos el mismo nivel de especificidad
+    ejemplo: tenemos una etiqueta de html que tiene dos clases que hacen lo mismo, aplican un color de fondo, el color de fondo que va a quedar en esa etiqueta sera el ultimo por la cascada
+
+    herencia
+
+    selector de anidacion
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    font-family: "Afacad Flux", sans-serif;
+}
+
+
+h1{
+    color:#912c01;
+}
+body{
+    background-color: #e4d3d3 ;
+}
+.fuenteNegrita{
+    font-weight: 700;
+}
+#header{
+    background-color: #efae60;
+}
+.colorVerde{
+    background-color: rgb(215, 238, 130);
+}
+.colorRosa{
+    background-color: pink;
+}
+.colorMarron{
+    background-color:#c47d5f;
+}
+ 
+/*Estilos Main pages.html*/
+.tamanioTreinta{
+    font-size:30px;
+}
+.tamanioVeinte{
+    font-size:20px;
+}
+.colorAzul{
+    color:rgb(27, 27, 147);
+}
+.colorRosa{
+    color: rgb(203, 46, 72);
+}
+/*
+.mainPages .seccionPrincipal p{
+    color: rgb(76, 3, 121);
+}*/
+.colorVioleta{
+    color: rgb(219, 17, 37);
+}
+
+.mainPages{
+    background-color: #77f3f8;
+    .seccionPrincipal{
+        font-size: 20px;
+        p{
+            color: rgb(76, 3, 121);
+        }
+    }
+}
+
+
+
